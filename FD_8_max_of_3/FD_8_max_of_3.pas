@@ -13,25 +13,14 @@ begin
   readln(num2);
   readln(num3);
 
-  if num1 >= num2 then
+  if (num1 >= num2) and (num1 >= num3) then
     maxnum := num1
   else
-    if num1 >= num3 then
-      maxnum := num1
+    if (num2 >= num1) and (num2 >= num3) then
+      maxnum := num2
     else
-      if num2 >= num1 then
-        maxnum := num2
-      else
-        if num2 >= num3 then
-          maxnum := num2
-        else
-          if num3 >= num1 then
-            maxnum :=num3
-          else
-            if num3 >= num2 then
-              maxnum := num3;
-        
-      
+      if (num3 >= num2) and (num3 >= num1) then
+        maxnum := num3;
 
   writeln('Найбільше число: ', maxnum);
 end.
