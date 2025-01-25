@@ -1,11 +1,11 @@
 ﻿program FD_14_function_find_max_of_two_numbers;
 
-function maxnum(n1: integer; n2: integer): integer;
+function maxnum(a1: integer; a2: integer): integer;
 begin
-  if n1 > n2 then
-    result := n1
+  if a1 > a2 then
+    result := a1
   else
-    result := n2
+    result := a2
 end;
 
 var
